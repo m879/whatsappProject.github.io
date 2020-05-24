@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html >
+    <head>
+        <title>Whatsapp</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <style>
+            body{
+                background-color:#005e54;
+            }
+        .header{
+            background-color:rgb(47, 117, 76);
+            top: 0;
+        } 
+        </style>
+        <script src="whatsapps.js"></script>
+    </head>
+<body>
+    <div class="header">
+        <h1 style="text-align: center;background-color :#005e54;"><img src="w1.png" height="80px"></h1>
+    </div>   
+        <style>
+            *{
+                box-sizing: border-box;
+            }
+            ul.comment{
+                margin: 0;
+                padding: 0;
+                height:570px;
+                overflow: scroll;
+                border: 1px solid;              
+            }
+            ul.comment li{
+                background-color:white;
+                font-size: 18px;
+                list-style-type: none;
+                width:100%;
+                padding: 12px 8px 12px 40px;
+                text-align: center;
+                position: relative;
+            }
+            ul.comment li a{
+                padding: 8px;
+                text-decoration: none;
+                color: black;
+                display: block;
+            }
+            ul.comment li:nth-child(odd){
+                background:whitesmoke;
+            }
+            ul.comment li:hover{
+                background: lightblue;
+            }
+            input#myInput{
+                padding: 10px;
+                width:100%;
+                font-size: 16px;
+            }
+            .addBtn{
+                margin-top: 10px;
+            padding: 10px;
+            width:100px;
+            background:red;
+            color: black;
+            /* float: left; */
+            text-align: center;
+            transition: 0.3s;
+            /* border-radius: 20%; */
+            }
+            .left{
+              
+                border-right:1px solid;
+                float: left;
+                width: 20%;
+                height:620px;
+                background-color:lightgray;
+            }
+            .right{
+                float: right;
+                background-color:lightgray;
+                height:620px;
+                width:80%;
+                border: 2px solid;
+            }
+          
+</style>
+
+<div class="main">
+    <div class="left" >
+            <div  class="contact">
+                <div id="myDiv" class="commentbox">
+                    <div style="background: white;">
+                        <input  id="mySearch" type="text" placeholder="Search or start new chat" onkeyup="myFunction()" style="font-size: 14px;
+                          border: 1px solid rgba(0,0,0,0.3);border-radius:20px;width:80%;height: 50px;border: 1px solid;">
+                        <img src="add.png" width="20%" height="50px" style="float:right;" onclick="myStudent()">
+
+                    </div>    
+                    <ul id="myUL" class="comment">
+                        <li><a><div id="student"  style=" width: 100%;text-align: center;
+                            display: none;">
+                            <input type="text" id="myInput" placeholder="Add to Contact">
+                            <span onclick="newElement()" class="addBtn">Add to Contact</span>
+                        </div></a></li>
+                        <li><a><img src="meraj.jpeg" width="30px" height="30px" style="border-radius: 100%;float: left;">Meraj Ahmed</a></li>
+                        <li><a><img src="profile.png" width="30px" height="30px" style="border-radius: 100%;float: left;">Akhlakh   </a></li>
+                        <li><a><img src="profile.png" width="30px" height="30px" style="border-radius: 100%;float: left;">Zaid      </a></li>
+                        <li><a><img src="profile.png" width="30px" height="30px" style="border-radius: 100%;float: left;">Adeeb     </a></li>
+                        <li><a><img src="profile.png" width="30px" height="30px" style="border-radius: 100%;float: left;">Ahmed     </a></li>
+                        <li><a><img src="profile.png" width="30px" height="30px" style="border-radius: 100%;float: left;">Aris      </a></li>
+                        <li><a><img src="profile.png" width="30px" height="30px" style="border-radius: 100%;float: left;">Harshit   </a></li>
+                        <li><a><img src="profile.png" width="30px" height="30px" style="border-radius: 100%;float: left;">Gauhar    </a></li>
+                        <li><a><img src="profile.png" width="30px" height="30px" style="border-radius: 100%;float: left;">Tarun     </a></li>
+                        <li><a><img src="profile.png" width="30px" height="30px" style="border-radius: 100%;float: left;">Shobit    </a></li>
+                        <li><a><img src="profile.png" width="30px" height="30px" style="border-radius: 100%;float: left;">Aman      </a></li>
+                        <li><a><img src="profile.png" width="30px" height="30px" style="border-radius: 100%;float: left;">Samir     </a></li>
+                        <li><a><img src="profile.png" width="30px" height="30px" style="border-radius: 100%;float: left;">Ilhaque   </a></li>
+                        <li><a><img src="profile.png" width="30px" height="30px" style="border-radius: 100%;float: left;">Rehman    </a></li>
+                        <li><a><img src="profile.png" width="30px" height="30px" style="border-radius: 100%;float: left;">Sakib     </a></li>
+                    </ul>
+                </div>
+            </div>
+            <script>
+            </script>          
+    </div>
+        
+            <div class="right">
+                <style>
+                   .chatuser
+                   {
+                   	height: 50px;
+                   	background-color:#005e54;
+                   	width: 100%;
+                   }
+                   .chatmsg
+                    {
+                    	width: 100%;
+                    	height:520px;
+                        background:#efe7dd repeat ;
+                    	box-shadow: 0px 4px 8px lightgray;
+                    	overflow:scroll;
+                    }
+                   #textarea
+                   {
+                   	width:73%;
+                   	height: 40px;
+                   	position: absolute;
+                   	resize: none;
+                   	border-radius: 25px;
+                   	overflow: hidden;
+                   	border: 1px solid rgba(0,0,0,0.4);
+                   	outline: 0px;
+                   	padding: 5px;
+                   	font-size: 14px;
+                   }
+                #sendsymbol
+                {
+                    margin-top: -15px;
+                    margin-right: 25px;
+                    float: right;
+                	right: -10px;
+                	font-size: 48px;
+                	color: red;
+                	font-weight: bold;
+                	cursor: pointer;
+                }
+                #sendsymbol:hover
+                {
+                	color: #009688;
+                }
+                .chatuser img
+                {
+                	width: 40px;
+                	height: 40px;
+                	float: left;
+                	margin-left: 10px;
+                	margin-top: 5px;
+                	border-radius: 50%;
+                }
+                
+                .chatuser p
+                {
+                	display: inline-block;
+                	margin-top: 15px;
+                	font-size: 18px;
+                	margin-left: 12px;
+                	color: white;
+                	font-family: verdana;                
+                }
+
+/*chat msg box*/
+         
+            /*msg received and send box*/
+            .received, .send
+            {
+            	display: none;
+            	overflow: hidden;
+            	position: relative;
+            }
+            
+            /*chat msg design*/
+            .chatmsg p
+            {
+            	padding: 6px;
+            	margin: 10px;
+            	/*border: 1px solid #43E954;*/
+            	border: none;
+            	max-width:500px;
+            	/*width:100%;*/
+                font-size:20px;
+            }
+            
+/*msg received design*/
+                .received p
+                {
+                	float: left;
+                	background-color: lightcoral;
+                	margin-left: 15px;
+                	border-radius: 0px 5px 5px 5px;
+                }
+                
+/*msg send desing*/
+                .send p
+                {
+                	float: right;
+                	background-color: lightcoral;
+                	margin-right: 15px;
+                	border-radius: 5px 0px 5px 5px;
+                }
+
+/* Add arrows to the left container (pointing left) */
+                .send::before {
+                    content: " ";
+                    height: 0;
+                    position: absolute;
+                    top: 10px;
+                    width: 0;
+                    z-index: 1;
+                    right: 0px;
+                    border: medium solid lightcoral;
+                    border-width: 0px 0px 15px 15px;
+                    border-color: transparent transparent transparent lightcoral;
+                }
+                
+/* Add arrows to the right container (pointing left) */
+                .received::before {
+                    content: " ";
+                    height: 0;
+                    position: absolute;
+                    top: 10px;
+                    width: 0;
+                    z-index: 1;
+                    left: 0px;
+                    border: medium solid white;
+                    border-width: 0px 15px 15px 0;
+                    border-color: transparent #F3F3F3 transparent transparent;
+                }
+                </style>
+                <script>
+                function sendmsg()
+                {
+                	var textarea=document.getElementById("textarea");
+                	var chat=document.getElementsByClassName("chatmsg");
+                
+                	var send=document.createElement("div");
+                	send.className="send";
+                
+                	var paapa=textarea.value.replace(/\s/g, "\u00a0");
+                	textarea.value="";
+                
+                	var sendpara=document.createElement("p");
+                	var text3=document.createTextNode(paapa);
+                	sendpara.appendChild(text3);
+                
+                	send.appendChild(sendpara);
+                	send.style.display="block";
+                
+                	chat[0].appendChild(send);
+                	chat[0].scrollTop=chat[0].scrollHeight;
+                }
+
+                var loadFile = function(event) {
+	    var output = document.getElementById('load2');
+	    output.src = URL.createObjectURL(event.target.files[0]);
+	  };
+
+                </script>
+                <div class="chat">
+                    <div class="chatuser">
+                        <img src="meraj.jpeg" class="chatimg"/>
+                        <p class="viewname">Meraj Ahmed</p>
+                    <a href="page3.html">
+                        <img src="menu.png" class="chatimg"   id="setting" style="float: right;margin-right:20px;"/>
+                    </a>
+                        <style>
+                     .imgbttn
+                          {	
+                            margin-top: 3px;
+                          	display: inline;
+                          	font-size: 30px;
+                          	background-color:rgba(0,0,0,0.5);
+                          	border-radius: 4px;
+                          	outline: 0px;
+                          }
+                           #chooseimg
+                          {
+                          	width: 90px;
+                          	height:50px;
+                          	font-size: 12px;
+                          	position:absolute;
+                          	opacity: 0;
+                          }
+                        </style>
+                        <div style="float: right;margin-right: 30px;">
+                            <input type="file" accept="images/*" id="chooseimg" onchange="loadFile(event)" onmouseover="onbuttoncolor()" onmouseout="outbuttoncolor()"/>
+                            <button  type="button" class="imgbttn" id="imgbttn">&#x1f4f7;</button>    
+                        </div>
+
+                    </div>    
+                    <div class="chatmsg">
+                        <div class="post">
+							<img id="load2" class="postimg" src=" " />
+						</div>
+                        
+                        <div class="received">
+                            <p>Hello</p>
+                        </div>
+    
+                        <div class="send">
+                            <p>Hi!</p>
+                        </div>
+    
+                        <div class="received">
+                            <p>How are you?</p>
+                        </div>
+    
+                    </div>
+                    <div class="sendmessage">
+                        <textarea id="textarea" placeholder="Type a message" style="font-size: 20px;"></textarea>
+                        <p id="sendsymbol" onclick="sendmsg();">&#x27A4;</p>
+                    </div>
+                </div>
+        </div>
+</body>
+</html>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+    <title>Whatsapp</title>
+    <head>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    </head>
+    <style>
+        body{
+            background-color: lightgrey;
+        }
+        .header{
+            background-color: darkgreen;
+            height: 100px;
+        }
+        .profile{
+            background-color: darkgrey;
+        }
+        input{
+            height:30px;
+            width:200px;
+        }
+        #nxtbtn{
+            height:40px;
+            width:205px;
+            background-color:lightblue;
+
+        }
+        .uploadButton {
+        display: inline;
+        background-color: #00AEEF;
+        border: 0px;
+        margin: 0px;
+        padding: 0px;
+        font-size: 16px;
+        width: 100%;
+        height: 40px;
+        color: white;
+        /* transition: width 1s ease-in-out; */
+        }
+        input[type="file"] {
+        	display: inline;
+        	border: 2px solid red;
+        	position: absolute;
+        	left: 12px;
+        	width: 90%;
+        	height: 30px;
+        	opacity: 0;
+        
+        }
+        
+    </style>
+    	<script src="whatsapps.js"></script>
+    <body>
+        <div>
+            <h1 style="text-align: center;"><img src="w1.png" height="100px"></h1>
+        </div>      
+        <div class="profile"></div>
+			<form action="page2.html">
+                <table style="padding-left:42%;">
+                    <tr>
+						<td style="padding-bottom:0px;"><img src="profile.png" id="load1" style="width:200px; height:230px;border-radius: 100%;"/>
+                        </td>
+                    </tr>    
+                    <tr>
+		                 <td> 
+                            <input type="button" class="uploadButton" id="browser" value="Browse"/>
+                            <input type="file" id="myFile" name="pic" accept="image/*" onchange="loadFile(event)" onmouseover="onbuttoncolor()" onmouseout="outbuttoncolor()"></td>
+                          </td>
+                    </tr>
+                    <tr>
+						<td><input id="phoneno" class="inputtext2" placeholder="Your Name" required/></td>
+					</tr>
+					<tr id="nextbut">
+						<td><input id="nxtbtn" type="submit" value="Submit"/></td>
+					</tr>
+
+				</table>
+			</form>
+        </div>
+<style>
+    .foot{
+
+	background-color:lightgrey;
+	text-align: center;
+	position: relative;
+	top: 20px;
+}
+.foot ul{
+	padding: 5px;
+	list-style-type: none;
+	text-align: center;
+	margin: 5px;
+	border-radius: 5px;
+}
+.foot ul li
+{
+	display: inline-block;
+	padding: 3px;
+}
+
+.foot ul li a
+{
+	text-decoration: underline;
+	/*padding: 10px;*/
+	color:black;
+	font-size:16px;
+}
+.foot ul li a:hover
+{
+	color: #009688;
+	font-size:20px;
+}
+
+.foot p
+{
+	color: #666666;
+	text-align: center;
+	font-size:20px;
+	padding-top: 6px;
+	padding-bottom: 1%;
+}
+
+</style>
+
+    	<div class="footer">
+            <div class="wrapper">
+                <div class="foot">
+                    <ul>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Contact</a></li>
+                        <li><a href="">Privacy and Policy</a></li>
+                        <li><a href="">Help</a></li>
+                    </ul>
+                    <p>Copyright © www.merajahmed.com 2020 All Rights Reserved.</p>
+                </div>
+            </div>
+        </div> 
+
+    </body>
+</html>
